@@ -5,8 +5,8 @@
 
 To start using AskHaven, follow these steps:
 
-1. Open Telegram and search for **@askhaven_bot**.
-2. Alternatively, click [here to open the bot](https://t.me/askhaven_bot).
+1. Open Telegram and search for **@askhavenbot**.
+2. Alternatively, click [here to open the bot](https://t.me/@askhavenbot).
 3. Type `/start` to begin interacting with the bot.
 4. You can type queries, and the bot will respond based on the available intents.
 
