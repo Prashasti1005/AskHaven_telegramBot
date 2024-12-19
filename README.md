@@ -23,7 +23,7 @@ AskHaven is able to answer queries of the following type:
 
 
 
-<img src="screenshot.jpeg" alt="chat" style="zoom:75%;" />
+<img src="screenshot.png" alt="chat" style="zoom:75%;" />
 
 
 
