@@ -38,7 +38,7 @@ The chatbot’s knowledge base is stored in a **JSON format**, which contains a 
 
 ```json
 {
-	"intents": [
+	"queries": [
 		{
 			"tag": "greeting",
 			"patterns": [
