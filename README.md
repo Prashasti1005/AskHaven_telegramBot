@@ -21,10 +21,32 @@ AskHaven is able to answer queries of the following type:
 - GCS : FAQs asked by freshers about various things related to college
 - programming : PC club queries, programming errors, suggestions, doubts and any other programming related queries!
 
+### Key Terms:
+- **patterns**: Various possible ways a user may ask a question or phrase their query.
+- **responses**: A set of possible responses that the bot can choose from based on the recognized intent.
+- **tag**: Groups together related queries and responses under one category for easy identification.
 
+## How It Works
+
+1. **User Input**: A user types a message or question to the bot.
+2. **Pattern Matching**: The bot compares the user's message to the patterns in its database to determine which category (intent) the query belongs to.
+3. **Response Selection**: Once the intent is identified, the bot selects a random response from the associated responses for that intent.
+4. **Reply**: The bot sends the chosen response back to the user.
 
 <img src="screenshot.png" alt="chat" style="zoom:75%;" />
+## Installation & Setup
 
+1. Clone this repository.
+2. Install required libraries:
+   ```
+   pip install nltk requests python-telegram-bot
+   ```
+3. Run the bot:
+   ```
+   python bot.py
+   ```
+
+4. Ensure that the **Telegram Bot Token** is correctly added to the script. You can get your bot token by creating a new bot via the **BotFather** on Telegram.
 
 
 ## Documentation
