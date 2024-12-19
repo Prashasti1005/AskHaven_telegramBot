@@ -1,5 +1,3 @@
-
-
 # AskHaven - Telegram Chatbot for First-Year Students
 
 **AskHaven** is a Telegram chatbot created to help first-year students with a variety of queries related to their college life, programming questions, and general information. AskHaven provides instant responses to common queries, helping students get quick answers for their needs.
@@ -20,7 +18,7 @@ To start using **AskHaven**, follow these steps:
 4. You can type queries, and the bot will respond based on the available intents.
 
 ### Available Commands:
-- `/start`: Starts the bot and makes it ready to receive queries.
+- **/start**: Starts the bot and makes it ready to receive queries.
 
 ### Categories of Queries:
 - **General**: Fun responses, jokes, and mood-lifting messages.
@@ -29,7 +27,8 @@ To start using **AskHaven**, follow these steps:
 
 ## Database Structure
 
-The chatbot’s knowledge base is stored in a **JSON format**, which contains a collection of **intents**. Each intent contains:
+The chatbot’s knowledge base is stored in a JSON format, which contains a collection of intents. Each intent contains:
+
 - **tag**: A label identifying the category (e.g., "greeting", "programming").
 - **patterns**: Different variations of queries that the bot will recognize as related to the same intent.
 - **responses**: A list of predefined replies that the bot will randomly select when responding.
@@ -38,43 +37,51 @@ The chatbot’s knowledge base is stored in a **JSON format**, which contains a 
 
 ```json
 {
-	"queries": [
-		{
-			"tag": "greeting",
-			"patterns": [
-				"Hi", "Hey", "How are you?", "Hello", "What's up?"
-			],
-			"responses": [
-				"Hello! How can I assist you today?", "Hey! What can I do for you?", "Hi there! Feel free to ask me anything."
-			]
-		},
-		{
-			"tag": "programming",
-			"patterns": [
-				"How to start programming?", "What is a good resource for learning programming?", "I have an error in my code. Can you help?",
-				"Tell me about competitive programming.", "How do I debug my code?"
-			],
-			"responses": [
-				"Here is a helpful guide on starting programming: [How to Start Programming](https://www.geeksforgeeks.org/how-to-start-learning-programming/).",
-				"To improve in competitive programming, practice is key! Try solving problems on websites like Codeforces, LeetCode, and HackerRank.",
-				"Please share your code, and I'll help you with debugging."
-			]
-		},
-		{
-			"tag": "gcs",
-			"patterns": [
-				"What is the first-year syllabus?", "What should I know before starting my first year?", "How do I balance studies and extracurriculars?",
-				"Where can I find hostel-related info?", "How do I make friends in college?"
-			],
-			"responses": [
-				"Here is the link to the first-year syllabus: [First Year Syllabus](https://www.college.com/first-year-syllabus).",
-				"Balancing studies and extracurriculars requires time management. Try organizing your schedule to make room for both!",
-				"For hostel-related information, check the hostel office or visit the official portal here: [Hostel Info](https://www.college.com/hostel-info)."
-			]
-		}
-	]
+  "queries": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hey", "How are you?", "Hello", "What's up?"
+      ],
+      "responses": [
+        "Hello! How can I assist you today?", 
+        "Hey! What can I do for you?", 
+        "Hi there! Feel free to ask me anything."
+      ]
+    },
+    {
+      "tag": "programming",
+      "patterns": [
+        "How to start programming?", 
+        "What is a good resource for learning programming?", 
+        "I have an error in my code. Can you help?",
+        "Tell me about competitive programming.", 
+        "How do I debug my code?"
+      ],
+      "responses": [
+        "Here is a helpful guide on starting programming: [How to Start Programming](https://www.geeksforgeeks.org/how-to-start-learning-programming/).",
+        "To improve in competitive programming, practice is key! Try solving problems on websites like Codeforces, LeetCode, and HackerRank.",
+        "Please share your code, and I'll help you with debugging."
+      ]
+    },
+    {
+      "tag": "gcs",
+      "patterns": [
+        "What is the first-year syllabus?", 
+        "What should I know before starting my first year?", 
+        "How do I balance studies and extracurriculars?",
+        "Where can I find hostel-related info?", 
+        "How do I make friends in college?"
+      ],
+      "responses": [
+        "Here is the link to the first-year syllabus: [First Year Syllabus](https://www.college.com/first-year-syllabus).",
+        "Balancing studies and extracurriculars requires time management. Try organizing your schedule to make room for both!",
+        "For hostel-related information, check the hostel office or visit the official portal here: [Hostel Info](https://www.college.com/hostel-info)."
+      ]
+    }
+  ]
 }
-```
+
 
 ### Key Terms:
 - **patterns**: Various possible ways a user may ask a question or phrase their query.
